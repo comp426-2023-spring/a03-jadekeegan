@@ -22,7 +22,7 @@ const rules = `Rules for Rock Paper Scissors:
   - Paper COVERS Rock
   - Rock CRUSHES Scissors`; 
 
-if (args.h || args.rules) {
+if (args.h || args.help) {
 	console.log(help_message);
 	process.exit(0);
 }
@@ -32,11 +32,13 @@ if (args.r || args.rules) {
 	process.exit(0);
 }
 
-let shot = args._
+let shot = args._[0]
 
 try {
+  console.log("im trying");
 	console.log(JSON.stringify(rps(shot)));
 } catch (e) {
-	console.log(help_message);
-	console.log(rules);
+  console.log("ERROR!")
+	// console.log(help_message);
+	// console.log(rules);
 }
