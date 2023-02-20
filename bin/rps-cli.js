@@ -35,10 +35,8 @@ if (args.r || args.rules) {
 let shot = args._[0]
 
 try {
-  console.log("im trying");
 	console.log(JSON.stringify(rps(shot)));
 } catch (e) {
-  console.log("ERROR!")
-	// console.log(help_message);
-	// console.log(rules);
+	console.log(help_message);
+	console.log(rules);
 }
