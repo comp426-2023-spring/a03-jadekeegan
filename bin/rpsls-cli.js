@@ -14,20 +14,21 @@ Examples:
   node-rpsls        Return JSON with single player RPSLS result.
                     e.g. {"player":"rock"}
   node-rpsls rock   Return JSON with results for RPSLS played against a simulated opponent.
-                    e.g {"player":"rock","opponent":"Spock","result":"lose"}`;
+                    e.g {"player":"rock","opponent":"Spock","result":"lose"}
+`;
 
 const rules = `Rules for the Lizard-Spock Espansion of Rock Paper Scissors:
-
-  - Scissors CUTS Paper
-  - Paper COVERS Rock
-  - Rock SMOOSHES Lizard
-  - Lizard POISONS Spock
-  - Spock SMASHES Scissors
-  - Scissors DECAPITATES Lizard
-  - Lizard EATS Paper
-  - Paper DISPROVES Spock
-  - Spock VAPORIZES Rock
-  - Rock CRUSHES Scissors`;
+- Scissors CUTS Paper
+- Paper COVERS Rock
+- Rock SMOOSHES Lizard
+- Lizard POISONS Spock
+- Spock SMASHES Scissors
+- Scissors DECAPITATES Lizard
+- Lizard EATS Paper
+- Paper DISPROVES Spock
+- Spock VAPORIZES Rock
+- Rock CRUSHES Scissors
+`;
 
 if (args.h || args.rules) {
         console.log(help_message);
@@ -44,6 +45,5 @@ let shot = args._[0]
 try {
         console.log(JSON.stringify(rpsls(shot)));
 } catch (e) {
-        console.log(help_message);
         console.log(rules);
 }
