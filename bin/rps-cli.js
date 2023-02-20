@@ -1,6 +1,6 @@
 // File that runs when you link/install package and run node-rps.
 import minimist from 'minimist';
-import { rps } from "/lib/rpsls.js"
+import { rps } from "../lib/rpsls.js"
 
 var args = minimist(process.argv.slice(2));
 
