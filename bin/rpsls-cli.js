@@ -1,4 +1,4 @@
-// File that runs when you link/install the package and run node-rpsls.
+#!/usr/bin/env node
 import minimist from 'minimist';
 import { rpsls } from "../lib/rpsls.js"
 

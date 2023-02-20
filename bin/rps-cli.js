@@ -1,4 +1,4 @@
-// File that runs when you link/install package and run node-rps.
+#!/usr/bin/env node
 import minimist from 'minimist';
 import { rps } from "../lib/rpsls.js"
 
